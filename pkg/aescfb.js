@@ -98,7 +98,7 @@ export class Aes128Cfb {
     try {
       var ptr0 = passArray8ToWasm0(data, wasm.__wbindgen_malloc);
       var len0 = WASM_VECTOR_LEN;
-      wasm.aes128cfb_decrypt(this.ptr, ptr0, len0);
+      wasm.aes128cfb_encrypt(this.ptr, ptr0, len0);
     } finally {
       data.set(getUint8Memory0().subarray(ptr0 / 1, ptr0 / 1 + len0));
       wasm.__wbindgen_free(ptr0, len0 * 1);
@@ -153,7 +153,7 @@ export class Aes192Cfb {
     try {
       var ptr0 = passArray8ToWasm0(data, wasm.__wbindgen_malloc);
       var len0 = WASM_VECTOR_LEN;
-      wasm.aes192cfb_decrypt(this.ptr, ptr0, len0);
+      wasm.aes192cfb_encrypt(this.ptr, ptr0, len0);
     } finally {
       data.set(getUint8Memory0().subarray(ptr0 / 1, ptr0 / 1 + len0));
       wasm.__wbindgen_free(ptr0, len0 * 1);
@@ -208,7 +208,7 @@ export class Aes256Cfb {
     try {
       var ptr0 = passArray8ToWasm0(data, wasm.__wbindgen_malloc);
       var len0 = WASM_VECTOR_LEN;
-      wasm.aes256cfb_decrypt(this.ptr, ptr0, len0);
+      wasm.aes256cfb_encrypt(this.ptr, ptr0, len0);
     } finally {
       data.set(getUint8Memory0().subarray(ptr0 / 1, ptr0 / 1 + len0));
       wasm.__wbindgen_free(ptr0, len0 * 1);

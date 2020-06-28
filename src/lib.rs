@@ -33,7 +33,7 @@ impl Aes256Cfb {
         self.inner.encrypt(data);
     }
     pub fn decrypt(&mut self, data: &mut [u8]) {
-        self.inner.encrypt(data);
+        self.inner.decrypt(data);
     }
 }
 
@@ -62,7 +62,7 @@ impl Aes128Cfb {
         self.inner.encrypt(data);
     }
     pub fn decrypt(&mut self, data: &mut [u8]) {
-        self.inner.encrypt(data);
+        self.inner.decrypt(data);
     }
 }
 
@@ -91,6 +91,6 @@ impl Aes192Cfb {
         self.inner.encrypt(data);
     }
     pub fn decrypt(&mut self, data: &mut [u8]) {
-        self.inner.encrypt(data);
+        self.inner.decrypt(data);
     }
 }
