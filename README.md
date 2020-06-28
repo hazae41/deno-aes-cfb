@@ -4,7 +4,7 @@ WebAssembly powered AES-CFB encryption for Deno, written in Rust.
 
 ## Usage
 
-    deno cache https://deno.land/x/deno-aes-cfb/mod.ts
+    deno cache https://deno.land/x/aes_cfb/mod.ts
 
 
 ```typescript
@@ -29,7 +29,7 @@ console.log(data);
 
 ## Test
 
-    deno run --allow-net https://deno.land/x/deno-aes-cfb/test.ts
+    deno run --allow-net https://deno.land/x/aes_cfb/test.ts
 
 ## Building
 
