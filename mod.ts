@@ -1,7 +1,7 @@
 export * from "./pkg/aescfb.js";
 import init from "./pkg/aescfb.js";
 
-export const name = "aescfb";
+export default "aescfb";
 
 async function read(path: string) {
   const url = new URL(path, import.meta.url);
