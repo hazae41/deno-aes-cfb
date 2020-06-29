@@ -1,6 +1,6 @@
-# AES-CFB encryption for Deno
+# AES-CFB / AES-CFB8 encryption for Deno
 
-WebAssembly powered AES-CFB encryption for Deno, written in Rust.
+WebAssembly powered AES-CFB / AES-CFB8 encryption for Deno, written in Rust.
 
 ## Usage
 
@@ -9,7 +9,9 @@ WebAssembly powered AES-CFB encryption for Deno, written in Rust.
 
 ```typescript
 import { Aes256Cfb } from "./mod.ts";
-// Aes256Cfb, Aes128Cfb, Aes192Cfb are supported
+// Aes256Cfb, Aes128Cfb, Aes192Cfb, 
+// Aes256Cfb8, Aes128Cfb8, Aes192Cfb8
+// are supported
 
 const secret = new TextEncoder().encode("gUkXp2s5v8x/A?D(G+KbPeShVmYq3t6w");
 const iv = secret.slice(0, 16);
@@ -40,5 +42,3 @@ console.log(data);
 - Build
 
       wasm-pack build --target web --release
-
-- Add `import name from "../mod.ts";` to `pkg/aescfb.js`

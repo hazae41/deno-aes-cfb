@@ -1,4 +1,6 @@
 export * from "./pkg/aescfb.js";
+
+// @deno-types=./pkg/aescfb.d.ts
 import init from "./pkg/aescfb.js";
 
 export default "aescfb";
