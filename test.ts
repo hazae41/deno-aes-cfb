@@ -16,6 +16,9 @@ function test_cfb() {
   cipher.encrypt(data);
   decipher.decrypt(data);
 
+  cipher.encrypt(data);
+  decipher.decrypt(data);
+
   console.log(data);
 }
 
@@ -24,6 +27,9 @@ function test_cfb8() {
   const decipher = new Aes256Cfb8(secret, iv);
 
   const data = new Uint8Array([1, 2, 3]);
+
+  cipher.encrypt(data);
+  decipher.decrypt(data);
 
   cipher.encrypt(data);
   decipher.decrypt(data);
