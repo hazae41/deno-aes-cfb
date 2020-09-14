@@ -45,6 +45,11 @@ function takeObject(idx) {
     dropObject(idx);
     return ret;
 }
+/**
+*/
+export function main() {
+    wasm.main();
+}
 
 let WASM_VECTOR_LEN = 0;
 
@@ -430,6 +435,9 @@ async function init(input) {
     }
     const imports = {};
     imports.wbg = {};
+    imports.wbg.__wbg_error_c2e9006073f76c8f = function(arg0, arg1) {
+        console.error(getStringFromWasm0(arg0, arg1));
+    };
     imports.wbg.__wbindgen_string_new = function(arg0, arg1) {
         var ret = getStringFromWasm0(arg0, arg1);
         return addHeapObject(ret);

@@ -2,6 +2,9 @@
 /* eslint-disable */
 /**
 */
+export function main(): void;
+/**
+*/
 export class Aes128Cfb {
   free(): void;
 /**
@@ -113,6 +116,7 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
+  readonly main: () => void;
   readonly __wbg_aes256cfb8_free: (a: number) => void;
   readonly aes256cfb8_new: (a: number, b: number, c: number, d: number) => number;
   readonly aes256cfb8_encrypt: (a: number, b: number, c: number) => void;

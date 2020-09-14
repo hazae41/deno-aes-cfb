@@ -7,7 +7,7 @@ export {
   Aes256Cfb8,
 } from "./pkg/aescfb.js";
 
-import init from "./pkg/aescfb.js";
+import init, { main } from "./pkg/aescfb.js";
 
 async function read(path: string) {
   const url = new URL(path, import.meta.url);
@@ -20,3 +20,5 @@ async function read(path: string) {
 }
 
 await init(read("./pkg/aescfb_bg.wasm"));
+
+main();

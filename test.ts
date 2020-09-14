@@ -1,7 +1,7 @@
 import { Aes256Cfb, Aes256Cfb8 } from "./mod.ts";
 
-const encoder = new TextEncoder();
-const secret = encoder.encode("gUkXp2s5v8x/A?D(G+KbPeShVmYq3t6w");
+const _secret = "gUkXp2s5v8x/A?D(G+KbPeShVmYq3t6w"
+const secret = new TextEncoder().encode(_secret);
 const iv = secret.slice(0, 16);
 
 function test_cfb() {

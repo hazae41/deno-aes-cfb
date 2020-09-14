@@ -1,6 +1,7 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
+export function main(): void;
 export function __wbg_aes256cfb8_free(a: number): void;
 export function aes256cfb8_new(a: number, b: number, c: number, d: number): number;
 export function aes256cfb8_encrypt(a: number, b: number, c: number): void;
